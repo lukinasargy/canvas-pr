@@ -335,52 +335,96 @@ template {
   background-color: orange;
   color: #fff
 }
-body,
-html {
-  height: 100%
-}
 body {
-  font-size: 16px;
-  min-width: 320px;
-  position: relative;
-  font-family: Montserrat,sans-serif;
-  overflow-x: hidden;
-  background-color: #fefefe;
-  line-height: 1.28;
-  color: #000;
-  font-weight: 500
+  text-align: center;
+  font-family: Arial,sans-serif;
+  height: 100vh;
+  -webkit-animation-name: bg-color;
+  animation-name: bg-color;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
+  background-color: bisque;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
 }
-body input,
-body textarea {
-  border: #666 1px solid;
-  outline: 0
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: #ffefd5
+  }
+  25% {
+    background-color: #87cefa
+  }
 }
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  border-color: red
+@keyframes bg-color {
+  0% {
+    background-color: #ffefd5
+  }
+  25% {
+    background-color: #87cefa
+  }
 }
-body input:required:valid,
-body textarea:required:valid {
-  border-color: green
+50% {
+  background-color: azure
 }
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto
+75% {
+  background-color: #fff8dc
 }
-section {
-  position: relative
+100% {
+  background-color: bisque
 }
 .container {
   position: relative;
   width: 992px;
-  margin: auto;
-  padding: 0 16px
+  margin: 0 auto;
+  padding: 0 16px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%
 }
 canvas {
   border: 4px solid purple;
-  margin: 400px auto;
-  display: block
+  background-color: #e0ffff
+}
+.rect {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px
 }
 /*!
 *
