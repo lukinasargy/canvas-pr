@@ -1,0 +1,103 @@
+/*!
+*
+*
+* FONTS IMPORT
+*
+*
+*/
+
+@import "vars";
+@import "fonts";
+/*!
+*
+*
+* LIBS FILES
+*
+*
+*/
+
+@import "libs";
+/*!
+*
+*
+* END OF LIBS FILES
+*
+* MAIN.CSS START
+*
+*
+*/
+
+::placeholder {
+    color: #666;
+}
+
+::selection {
+    background-color: $accent;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+
+    min-width: 320px;
+    position: relative; //line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    background-color: #fefefe;
+    line-height: 1.28;
+
+    color: #000;
+    font-weight: 500;
+    input,
+    textarea {
+        border: #666 1px solid;
+        outline: none;
+        &:focus:required:invalid {
+            border-color: red;
+        }
+        &:required:valid {
+            border-color: green;
+        }
+    }
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+
+}
+
+.container {
+    position: relative;
+    width: 992px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+canvas {
+  border:4px solid purple;
+  margin: 400px  auto;
+  display: block;
+}
+
+/*!
+*
+*
+* END OF MAIN.CSS
+*
+* MEDIA.CSS START
+*
+*
+*/
+
+@import "media"; // Always at the end
