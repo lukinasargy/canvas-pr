@@ -46,7 +46,43 @@
     ctx.arc(150,150,20,0, Math.PI, false);
     ctx.strokeStyle = "rgb(455,10,0)";
     ctx.stroke();
+    
+    //hat
+    ctx.beginPath();
+    ctx.moveTo(100,80);
+    ctx.lineTo(150,0);
+    ctx.lineTo(200,80);
+    ctx.lineTo(100,80);
+    ctx.fillStyle = "rgb(455,10,0)";
+    ctx.fill();
+    
+    
+    ctx.beginPath();
+    ctx.moveTo(90,80)
+    ctx.quadraticCurveTo(100,70,150,70);
+    ctx.quadraticCurveTo(210,70,210,80);
+    ctx.quadraticCurveTo(200,90,150,90);
+    ctx.quadraticCurveTo(90,90,90,80);
+    ctx.fillStyle = "#fff";
+    ctx.fill();
 
+    
+    
+    //snow
+    for (var i = 1; i<10;i++) {
+      for (var j = 1; j<10;j++) {
+        ctx.beginPath();
+        ctx.arc(i*30,j*30,3, 0, Math.PI*2, true);
+        ctx.fillStyle = "#fff";
+        ctx.fill();
+      }
+      
+    }
+    
+    
+    
+
+    
     
     }
   };

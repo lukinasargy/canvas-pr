@@ -413,9 +413,7 @@ canvas {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-name: mymove;
-  animation-name: mymove
+  animation-iteration-count: 1
 }
 canvas:hover {
   -webkit-animation-play-state: running;
@@ -423,10 +421,11 @@ canvas:hover {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: scale(1.5) rotateY(180deg);
-  transform: scale(1.5) rotateY(180deg);
-  -webkit-box-shadow: 0 0 300px rgba(255,255,255,.8);
-  box-shadow: 0 0 300px rgba(255,255,255,.8)
+  -webkit-transform: scale(1.5) rotate(360deg);
+  -ms-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+  -webkit-box-shadow: 0 0 200px #fff;
+  box-shadow: 0 0 200px #fff
 }
 @-webkit-keyframes mymove {
   0% {
