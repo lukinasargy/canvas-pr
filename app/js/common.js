@@ -37,9 +37,7 @@
    
     
     ctx.beginPath();
-//    ctx.moveTo(105, 150);
     ctx.arc(100,150,5, 0, Math.PI*2, true);
-//    ctx.moveTo(205, 150);
     ctx.arc(200,150,5, 0, Math.PI*2, true);
     ctx.fillStyle = "rgb(455,10,0)";
     ctx.fill();
