@@ -81,8 +81,19 @@
     
     
     //path Object
+    var rectangle = new Path2D();
+    rectangle.rect(20,240,50,50);
+    ctx.fillStyle = "green";
+    ctx.fill(rectangle);
     
+    var svgp = new Path2D ('M20 260 h 50 v 10 h -50 Z ');
+    var svgp2 = new Path2D ('M40 240 h 10 v 50 h -10 Z ');
+
+    ctx.fillStyle = "orange";
+    ctx.fill(svgp);
+    ctx.fill(svgp2);
     
+
 
     
     
