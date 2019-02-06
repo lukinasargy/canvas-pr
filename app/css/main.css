@@ -401,12 +401,12 @@ body {
   justify-content: center;
   height: 100%
 }
-canvas {
+#canvas {
   border: 4px solid green;
   position: absolute;
   background-color: #e0ffff;
-  top: 40%;
-  right: 40%;
+  top: 30%;
+  right: 30%;
   position: absolute;
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
@@ -415,7 +415,7 @@ canvas {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1
 }
-canvas:hover {
+#canvas:hover {
   -webkit-animation-play-state: running;
   animation-play-state: running;
   -webkit-transition: all 1s;
@@ -475,6 +475,9 @@ canvas:hover {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 10px
+}
+#glCanvas {
+  position: relative
 }
 /*!
 *
