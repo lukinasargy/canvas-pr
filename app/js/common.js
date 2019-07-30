@@ -80,7 +80,7 @@
     }
     
     
-    //path Object
+    //path Object box
     var rectangle = new Path2D();
     rectangle.rect(20,240,50,50);
     ctx.fillStyle = "green";
